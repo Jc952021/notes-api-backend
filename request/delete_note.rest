@@ -1,0 +1,3 @@
+
+//haciendo esto se borrar la nota con id 1
+DELETE http://localhost:3000/api/2

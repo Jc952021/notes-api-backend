@@ -1,0 +1,16 @@
+POST http://localhost:3000/api
+Content-Type: application/json
+//para que el servidor sepa que content-type le estamos enviando,ojo siempre hay que ponerlo debajo del post
+
+//aca se envia un objeto json
+{
+"content":"nueva nota",
+"important":true
+}
+###
+//se crea tres ### si quieres poner otro post debajo para probar
+POST http://localhost:3000/api
+Content-Type: application/json
+
+{
+}

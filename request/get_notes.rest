@@ -1,0 +1,2 @@
+//poner un get con la url
+GET http://localhost:3000/api
