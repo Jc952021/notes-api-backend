@@ -100,7 +100,7 @@ app.use((req, res) => {
   })
 })
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
   console.log('SERVER RUNNING')
 })
@@ -133,3 +133,7 @@ app.listen(PORT, () => {
 // en services-notes.js del project clonado, ahi se configura la const baseurl con la ruta de tu api , en mi caso termina con/api
 // al hacer un get a la api hay un problema de cors(creo que sig. que no se puede pasar algunos archivos entre servidores)- instalar npm i cors -E (el e es version exacta)-traerlo con require y que el app lo use- para ver mas de cors buscar cors express
 // ps 5 crear un repositorio-hacer un git bash a la carpeta de tu api-añadir commit(no se porque)-git add .crear el archivo .-el prof se equivoco y añadio el node_modules-hacer un git checkout . -git reset . .gitignore-ahi añadir al node_modules-git checkout para comprobar-añadir el commit-usar el git branch _M main-añadir el gitremoteadd-luego el push
+// ps 6 crear un archivo Procfile -poner ahi unos codigos:el 1 es que tipo de recurso quiere deployar,el 2 como inicia el proyecto
+// instalar herocku cli-en el index para que herocku tenga el puerto que quiera se pone process.env.PORT o el puerto que queramos
+// crear la aplicacion de herocku - poner en la terminal bash de tu archivo heroku create-saldra un link de la app-ver en git remote lo que ha creado-ver tambien el fetch git remote show heroku
+// hacer un nuevo git add. para añadir el procfile -commit-poner solo el git push ya que antes lo configuramos para qqe se vaya al origen del github
